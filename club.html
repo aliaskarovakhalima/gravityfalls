@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Gravity Falls</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      
+        <!--Icon-->
+        <link href="img/logo.png" rel="icon">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+        <!--Bootstrap CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <!--Main Styleshhet File-->
+        <link rel="stylesheet" href="club.css">
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Owl Carousel -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+        <script src="https://api-maps.yandex.ru/2.1?apikey=
+5eff2bb7-7f39-4b83-9d62-fef2f6227286&lang=ru_RU"
+ type="text/javascript"></script>
+<script type="text/javascript">
+  ymaps.ready(init);
+  function init() {  
+    var map = new ymaps.Map('map', {
+      center: [43.222918, 76.906431], 
+      zoom: 13
+    });
+
+    var placemark = new ymaps.Placemark([43.222608, 76.909768],{
+
+    });
+    map.geoObjects.add(placemark);
+}
+</script>
+    </head>
+    <body>
+      <div class="wrapper">
+        <header class="index-header">
+          <nav>
+            <div class="menu-icon">
+              <i class="fa fa-bars fa 2x"></i>
+            </div>
+            <div class="brand">
+              <a href="#"><img src="img/logo.png" alt=""></a>
+            </div>
+            <div class="menu">
+              <ul>
+                <li ><a href="#">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#members">Our members</a></li>
+                <li><a href="#location">Location</a></li>
+                <li class="btn-log"><a href=registrationform.html >Join us</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="header-text">
+            <h1>Not a member of our fan club?<br>
+            <span>Start your membership today!</span></h1>
+            <a href="registrationform.html" class="about-btn scrollto">Join us</a>
+          </div>          
+        </header>
+      </div>   
+      <main>
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2>About Us </h2>
+                    <p>How often have you wanted to share with someone what cool fan fiction you read, what movie you watched, what grade in literature you received? <br>We can do all this and much more. In the format of a personal blog or messages in a shared feed, you can communicate with each other, discuss any topics, ask questions, ask for help and have fun in every possible way.</p>
+                    <p>Welcome to the Gravity Falls Fanclub, a collaborative website for everything and anything related to Gravity Falls.<br>
+                         Our club unites like-minded people and fans of the animated series Gravity Falls. </p>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <section id="members">
+            <div class="container">
+                <div class="section-header">
+                  <h2>Our members</h2>
+                </div>
+              </div>
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img src="img/fans/1.jpg" alt=""></div>
+                <div class="item"><img src="img/fans/2.jpg" alt=""></div>
+                <div class="item"><img src="img/fans/3.jpg" alt=""></div>
+                <div class="item"><img src="img/fans/4.jpg" alt=""></div>
+                <div class="item"><img src="img/fans/5.jpg" alt=""></div>
+                <div class="item"><img src="img/fans/6.jpg" alt=""></div>
+                <div class="item"><img src="img/fans/7.jpg" alt=""></div>
+                <div class="item"><img src="img/fans/8.png" alt=""></div>
+
+            </div>
+        </section>
+        <section id="location">
+            <div class="container">
+                <div class="location-header">
+                  <h2>Our location</h2>
+                </div>
+              </div>
+             
+    <div class="container">
+      <div class="row centered">
+    <div id="map"></div>
+
+<style type="text/css">
+  #map {
+  height: 400px;
+  width: 1200px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  padding-top: 10px;
+ 
+} </style>
+        </div>
+      </div>s
+  </div>
+        </section>
+        <section id="contact">
+  
+            <div class="container">
+      
+              <div class="section-header">
+                <h2>Contact Us</h2>
+              </div>
+      
+              <div class="row contact-info">
+      
+                <div class="col-md-4">
+                  <div class="contact-address">
+                    <i class="ion-ios-location-outline"></i>
+                    <h3>Address</h3>
+                    <address>8 Manas street, Almaty 050000</address>
+                  </div>
+                  <div class="contact-phone">
+                    <i class="ion-ios-telephone-outline"></i>
+                    <h3>Phone Number</h3>
+                    <p><a href="tel:+155895548855">+7 777 777 77 77</a></p>
+                  </div>
+                  <div class="contact-email">
+                    <i class="ion-ios-email-outline"></i>
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@example.com">info@example.com</a></p>
+                  </div>
+                </div>
+      
+                <div class="col-md-8">
+                  <div class="form">
+                    <div id="sendmessage">Your message has been sent. Thank you!</div>
+                    <div id="errormessage"></div>
+                    <form action="" method="post" role="form" class="contactForm">
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                          <div class="validation"></div>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                          <div class="validation"></div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                        <div class="validation"></div>
+                      </div>
+                      <div class="form-group">
+                        <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                        <div class="validation"></div>
+                      </div>
+                      <div class="text-center"><button type="submit">Send Message</button></div>
+                    </form>
+                  </div>
+                </div>
+      
+      
+              </div>
+      
+             
+      
+            </div>
+          </section><!-- #contact -->
+         
+      </main>
+      <footer id="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+    
+              <div class="col-lg-4 col-md-6 footer-info">
+                <img src="img/logo.png" alt="TheGF">
+                <p>Who among us, as a child, did not dream of seeing something mysterious and mysterious? 
+                  For the twins Dipper and Mabel, this dream became a reality – they became part of the 
+                  mystical events of Gravity falls. Every day of their vacation in uncle Stan's "Mystery Shack" 
+                  is full of paranormal riddles that are difficult to solve without logic and common sense, 
+                  but for brave guys this is not a problem.</p>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
+                  <li><i class="fa fa-angle-right"></i> <a href="#">About us</a></li>
+                  <li><i class="fa fa-angle-right"></i> <a href="#">Services</a></li>
+                  <li><i class="fa fa-angle-right"></i> <a href="#">Terms of service</a></li>
+                  <li><i class="fa fa-angle-right"></i> <a href="#">Privacy policy</a></li>
+                </ul>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 footer-contact">
+                <h4>Contact Us</h4>
+                <p>
+                  8 Manas street <br>
+                  Almaty 050000<br>
+                  Kazakhstan<br>
+                  <strong>Phone:</strong> +7 777 777 77 77<br>
+                  <strong>Email:</strong> info@example.com<br>
+                </p>
+    
+                <div class="social-links">
+                  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                  <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                  <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                </div>
+    
+              </div>
+    
+            </div>
+          </div>
+        </div>
+    
+        <div class="container">
+          <div class="copyright">
+            &copy; Copyright <strong>TheGravityFalls</strong>. All Rights Reserved
+          </div>
+         
+        </div>
+      </footer><!-- #footer -->
+      <script src="main.js"></script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+<script >
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    autoplay: true,
+    autoplayTimeout: 1000,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        600:{
+            items:3,
+            nav:false
+        },
+        1000:{
+            items:5,
+            nav:false,
+            loop:false
+        }
+    }
+})
+      </script>
+    </body>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+</html>
